@@ -28,36 +28,25 @@
     background-position:center;
     padding: 80px;
   }
-  .jumbotron {
+.jumbotron {
     margin-bottom: 80px;
   }
 .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .info-btn {
-  margin-top: 20px;
   margin-bottom: 20px;
   background: #001B94;
-  color:#A2ADA5;
+  color: white;
   width: 100px;
-  padding: 5px;
-}
-.vertical {
-  border-left: 1px solid #080705;
-  height: 250px;
-  position: absolute;
-  left: 47%;
+  padding:5px;
+  align-self: center;
 }
 .flex-info {
-  height: 250px;
-
+  height: 350px;
 }
 .flex-info-body {
-  display: flex;
-  flex-direction: column;
-}
-.flex-comm-body {
   display: flex;
   flex-direction: column;
 }
@@ -68,4 +57,10 @@
 }
 .how-it-works {
   margin-bottom: 80px;
+  background: #A2ADA5;
+  padding:40px;
+  color: #080705;
+}
+.communication {
+  margin-top: 20px;
 }

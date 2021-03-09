@@ -13,7 +13,6 @@
 </head>
 <body>
 <!-- Navigation  -->
-<!-- Just an image -->
   <nav class="navbar navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -69,7 +68,7 @@
 <!-- client information  -->
   <div class="container">
     <section class="book text-center">
-      <h2>Book your Appointment</h2>
+      <h2>Book</h2>
       <form class="info" id="form-info">
         <div class="card flex-info">
           <div class="card-body flex-info-body">
@@ -100,31 +99,30 @@
               <option value="time">5:00 p.m </option>
               <option value="time">6:00 p.m </option>
             </select>
-          </div>
-        </div>
-        <div class="vertical"></div>
-        <div class="card flex-comm">
-            <div class="card-body flex-comm-body">
-              <p>Select a means of communication for your consultation.</p>
-                <label for="communication">Mode of communication</label>
-                <select name="comm" id="comm">
+              <label for="communication"class="communication">Mode of communication</label>
+              <select name="comm" id="comm">
                   <option value=""></option>
                   <option value="">Google Meet</option>
                   <option value="">Zoom</option>
                   <option value="">Phone Call</option>
-                </select><br>
+              </select><br>
               <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
-            </div>
-        </div>
+          </div>
+        </div> 
       </form>
     </section>
 <!-- Price  -->
-    <section class="price">
+    <section class="price text-center">
+      <h2>Payment</h2>
       <form action="" name="pricing" class="pricing" id="pricing">
 
       </form>
     </section>
   </div>
+<!-- Footer  -->
+  <footer class="">
+    
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
 </body>
