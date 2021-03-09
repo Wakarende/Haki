@@ -26,24 +26,46 @@
     height: 50vh;
     background-size: cover;
     background-position:center;
-    margin: 0;
     padding: 80px;
+  }
+  .jumbotron {
+    margin-bottom: 80px;
   }
 .info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .info-btn {
   margin-top: 20px;
   margin-bottom: 20px;
   background: #001B94;
+  color:#A2ADA5;
+  width: 100px;
+  padding: 5px;
 }
 .vertical {
   border-left: 1px solid #080705;
-  height: 200px;
+  height: 250px;
   position: absolute;
-  left: 50%;
+  left: 47%;
 }
 .flex-info {
-  height: 200px;
+  height: 250px;
+
+}
+.flex-info-body {
+  display: flex;
+  flex-direction: column;
+}
+.flex-comm-body {
+  display: flex;
+  flex-direction: column;
+}
+.bi-book {
+  font-size: 50px;
+  line-height: 2;
+  color: #001B94;
+}
+.how-it-works {
+  margin-bottom: 80px;
 }

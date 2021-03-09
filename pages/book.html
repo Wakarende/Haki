@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <title>Book Your Appointment</title>
@@ -42,7 +43,29 @@
     <h1>Book Your Appoointment Today</h1>
     <p>Home // Book </p>
   </div>
-
+<!-- How it works  -->
+  <div class="container">
+    <section class="how-it-works text-center">
+      <h2>How It Works</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="bi-book bi-journal-text"></i>
+          <h4 class="book-icon-title">Fill out Form</h4>
+          <p>Fill out a from inputting your details<br> and choose the service you want.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi-book bi-wallet"></i>
+          <h4 class="book-icon-title">Pay Consultation Fee</h4>
+          <p>Pay a Standard Consultaion Fee.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi-book bi-inbox"></i>
+          <h4 class="book-icon-title">Receive Email</h4>
+          <p>Receive link to your session immediately.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 <!-- client information  -->
   <div class="container">
     <section class="book text-center">
@@ -80,9 +103,8 @@
           </div>
         </div>
         <div class="vertical"></div>
-        <div class="flex-comm">
-          <div class="card">
-            <div class="body">
+        <div class="card flex-comm">
+            <div class="card-body flex-comm-body">
               <p>Select a means of communication for your consultation.</p>
                 <label for="communication">Mode of communication</label>
                 <select name="comm" id="comm">
@@ -93,10 +115,10 @@
                 </select><br>
               <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
             </div>
-          </div>
         </div>
       </form>
     </section>
+<!-- Price  -->
     <section class="price">
       <form action="" name="pricing" class="pricing" id="pricing">
 
