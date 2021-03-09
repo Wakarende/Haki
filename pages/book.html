@@ -13,71 +13,87 @@
 <body>
 <!-- Navigation  -->
 <!-- Just an image -->
-<nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="../img/haki-logo.png" alt="logo" width="70" height="70">
-    </a>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active"  aria-current="page" href="#">Book</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Contact</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../img/haki-logo.png" alt="logo" width="80" height="80">
+      </a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="#">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Header  -->
+  <div class=" jumbotron container-fluid text-center my-5 header-book">
+    <h1>Book Your Appoointment Today</h1>
+    <p>Home // Book </p>
   </div>
-</nav>
+
 <!-- client information  -->
   <div class="container">
-    <section class="book">
+    <section class="book text-center">
       <h2>Book your Appointment</h2>
       <form class="info" id="form-info">
-        <label for="names" class="names" id="names">Full Name:</label>
-          <input type="text" value="" class="name" id="fullname"><br>
-        <label for="names" class="names" id="names">Day of Appointment:</label>
-          <select>
-            <option value="day"></option>
-            <option value="day">Monday</option>
-            <option value="day">Tuesday</option>
-            <option value="day">Wednesday</option>
-            <option value="day">Thursday</option>
-            <option value="day">Friday</option>
-            <option value="day">Saturday</option>
-          </select><br>
-          <label for="time">Time of Appointment</label>
-          <select name="time" id="time">
-            <option value="time"></option>
-            <option value="time">8:00 a.m</option>
-            <option value="time">9:00 a.m </option>
-            <option value="time">10:00 a.m </option>
-            <option value="time">11:00 a.m </option>
-            <option value="time">12:00 a.m </option>
-            <option value="time">1:00 p.m </option>
-            <option value="time">2:00 p.m </option>
-            <option value="time">3:00 p.m </option>
-            <option value="time">4:00 p.m </option>
-            <option value="time">5:00 p.m </option>
-            <option value="time">6:00 p.m </option>
-          </select><hr>
-           <p>Select a means of communication for your consultation.</p>
-            <label for="communication">Mode of communication</label>
-            <select name="comm" id="comm">
-              <option value=""></option>
-              <option value="">Google Meet</option>
-              <option value="">Zoom</option>
-              <option value="">Phone Call</option>
+        <div class="flex-info">
+          <label for="names" class="names" id="names">Full Name:</label>
+            <input type="text" value="" class="name" id="fullname"><br>
+          <label for="names" class="names" id="names">Day of Appointment:</label>
+            <select>
+              <option value="day"></option>
+              <option value="day">Monday</option>
+              <option value="day">Tuesday</option>
+              <option value="day">Wednesday</option>
+              <option value="day">Thursday</option>
+              <option value="day">Friday</option>
+              <option value="day">Saturday</option>
             </select><br>
-          <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+            <label for="time">Time of Appointment</label>
+            <select name="time" id="time">
+              <option value="time"></option>
+              <option value="time">8:00 a.m</option>
+              <option value="time">9:00 a.m </option>
+              <option value="time">10:00 a.m </option>
+              <option value="time">11:00 a.m </option>
+              <option value="time">12:00 a.m </option>
+              <option value="time">1:00 p.m </option>
+              <option value="time">2:00 p.m </option>
+              <option value="time">3:00 p.m </option>
+              <option value="time">4:00 p.m </option>
+              <option value="time">5:00 p.m </option>
+              <option value="time">6:00 p.m </option>
+            </select>
+          </div>
+          <div class="vertical"></div>
+          <div class="flex-comm">
+            <p>Select a means of communication for your consultation.</p>
+              <label for="communication">Mode of communication</label>
+              <select name="comm" id="comm">
+                <option value=""></option>
+                <option value="">Google Meet</option>
+                <option value="">Zoom</option>
+                <option value="">Phone Call</option>
+              </select><br>
+            <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+          </div>
+      </form>
+    </section>
+    <section class="price">
+      <form action="" name="pricing" class="pricing" id="pricing">
+
       </form>
     </section>
   </div>

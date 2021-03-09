@@ -1,9 +1,10 @@
  * {
    font-family: 'Ubuntu', sans-serif;
-   color: #080705;
+
   }
   h2 {
     text-transform: uppercase;
+    margin-bottom: 40px;
   }
   /* Book Section  */
   .logo {
@@ -11,8 +12,27 @@
   }
   .nav-link {
     color: #080705;
+    text-transform: uppercase;
   }
   .nav-link:hover{
     color: #001B94;
   }
-  
+  .header-book {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/book-img-header.jpg);
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position:center;
+    margin: 0;
+    padding: 80px;
+  }
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+.vertical {
+  border-left: 1px solid #080705;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+}
