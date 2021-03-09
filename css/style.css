@@ -20,16 +20,22 @@
   .nav-link:hover{
     color: #001B94;
   }
+  .navbar {
+    margin-bottom: 0;
+  }
   .header-book {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/book-img-header.jpg);
     background-repeat: no-repeat;
     height: 50vh;
     background-size: cover;
     background-position:center;
-    padding: 80px;
   }
-.jumbotron {
-    margin-bottom: 80px;
+  .header-book h1 {
+    color: white;
+    padding-top: 80px;
+  }
+  .header-book p {
+    color: white;
   }
 .info {
   display: flex;
@@ -37,7 +43,7 @@
 }
 .info-btn {
   margin-bottom: 20px;
-  background: #001B94;
+  background: #89CFF0;
   color: white;
   width: 100px;
   padding:5px;
@@ -53,14 +59,42 @@
 .bi-book {
   font-size: 50px;
   line-height: 2;
-  color: #001B94;
+  color: #89CFF0;
 }
 .how-it-works {
   margin-bottom: 80px;
-  background: #A2ADA5;
+  background: #ededed;
   padding:40px;
   color: #080705;
 }
 .communication {
   margin-top: 20px;
+}
+/* footer  */
+.footer {
+  background: #ededed;
+  padding-top: 50px;
+}
+.footer-link {
+  list-style: none;
+  color: #080705;
+  line-height: 2;
+}
+.footer-img {
+  text-align: center;
+}
+.bi-footer {
+  font-size: 20px;
+  color: #89CFF0;
+  margin-right:20px;
+}
+.bi-footer span {
+  color: #080705;
+}
+&copy {
+  align-items: right;
+}
+.footer-end {
+  display: flex;
+  justify-content: space-evenly;
 }
