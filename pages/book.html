@@ -15,7 +15,7 @@
   <div class="container">
     <section class="book">
       <h2>Book your Appointment</h2>
-      <form action="" class="info">
+      <form class="info" id="form-info">
         <label for="names" class="names" id="names">Full Name:</label>
           <input type="text" value="" class="name" id="fullname"><br>
         <label for="names" class="names" id="names">Day of Appointment:</label>
@@ -42,20 +42,20 @@
             <option value="time">4:00 p.m </option>
             <option value="time">5:00 p.m </option>
             <option value="time">6:00 p.m </option>
-      </form><br>
-             <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
-      
-<!-- consultation options  -->
-      <form action="" class="communication">
-        </select>
+          </select><hr>
+           <p>Select a means of communication for your consultation.</p>
             <label for="communication">Mode of communication</label>
             <select name="comm" id="comm">
               <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-      </section>
-    </form>
+              <option value="">Google Meet</option>
+              <option value="">Zoom</option>
+              <option value="">Phone Call</option>
+            </select><br>
+          <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+      </form>
+    </section>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
