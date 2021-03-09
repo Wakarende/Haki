@@ -1,6 +1,18 @@
  * {
    font-family: 'Ubuntu', sans-serif;
+   color: #080705;
   }
   h2 {
     text-transform: uppercase;
   }
+  /* Book Section  */
+  .logo {
+    height: 100px;
+  }
+  .nav-link {
+    color: #080705;
+  }
+  .nav-link:hover{
+    color: #001B94;
+  }
+  
