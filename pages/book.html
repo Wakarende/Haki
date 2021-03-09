@@ -49,18 +49,18 @@
       <div class="row">
         <div class="col-md-4">
           <i class="bi-book bi-journal-text"></i>
-          <h4 class="book-icon-title">Fill out Form</h4>
+          <h4 class="book-icon-title">Book</h4>
           <p>Fill out a from inputting your details<br> and choose the service you want.</p>
         </div>
         <div class="col-md-4">
           <i class="bi-book bi-wallet"></i>
-          <h4 class="book-icon-title">Pay Consultation Fee</h4>
+          <h4 class="book-icon-title">Pay</h4>
           <p>Pay a Standard Consultaion Fee.</p>
         </div>
         <div class="col-md-4">
           <i class="bi-book bi-inbox"></i>
-          <h4 class="book-icon-title">Receive Email</h4>
-          <p>Receive link to your session immediately.</p>
+          <h4 class="book-icon-title">Receive</h4>
+          <p>Receive link to your session via email.</p>
         </div>
       </div>
     </section>
@@ -74,6 +74,10 @@
           <div class="card-body flex-info-body">
             <label for="names" class="names" id="names">Full Name:</label>
               <input type="text" value="" class="name" id="fullname"><br>
+              <label for="service" class="services" id = "services">Serivce:</label>
+              <select name="service" id="service">
+                <option value=""></option>
+              </select>
             <label for="names" class="names" id="names">Day of Appointment:</label>
               <select>
                 <option value="day"></option>
@@ -84,7 +88,7 @@
                 <option value="day">Friday</option>
                 <option value="day">Saturday</option>
               </select><br>
-            <label for="time">Time of Appointment</label>
+            <label for="time">Time of Appointment:</label>
             <select name="time" id="time">
               <option value="time"></option>
               <option value="time">8:00 a.m</option>
@@ -99,7 +103,7 @@
               <option value="time">5:00 p.m </option>
               <option value="time">6:00 p.m </option>
             </select>
-              <label for="communication"class="communication">Mode of communication</label>
+              <label for="communication"class="communication">Mode of communication:</label>
               <select name="comm" id="comm">
                   <option value=""></option>
                   <option value="">Google Meet</option>
