@@ -48,19 +48,20 @@
     <section class="book text-center">
       <h2>Book your Appointment</h2>
       <form class="info" id="form-info">
-        <div class="flex-info">
-          <label for="names" class="names" id="names">Full Name:</label>
-            <input type="text" value="" class="name" id="fullname"><br>
-          <label for="names" class="names" id="names">Day of Appointment:</label>
-            <select>
-              <option value="day"></option>
-              <option value="day">Monday</option>
-              <option value="day">Tuesday</option>
-              <option value="day">Wednesday</option>
-              <option value="day">Thursday</option>
-              <option value="day">Friday</option>
-              <option value="day">Saturday</option>
-            </select><br>
+        <div class="card flex-info">
+          <div class="card-body flex-info-body">
+            <label for="names" class="names" id="names">Full Name:</label>
+              <input type="text" value="" class="name" id="fullname"><br>
+            <label for="names" class="names" id="names">Day of Appointment:</label>
+              <select>
+                <option value="day"></option>
+                <option value="day">Monday</option>
+                <option value="day">Tuesday</option>
+                <option value="day">Wednesday</option>
+                <option value="day">Thursday</option>
+                <option value="day">Friday</option>
+                <option value="day">Saturday</option>
+              </select><br>
             <label for="time">Time of Appointment</label>
             <select name="time" id="time">
               <option value="time"></option>
@@ -77,18 +78,23 @@
               <option value="time">6:00 p.m </option>
             </select>
           </div>
-          <div class="vertical"></div>
-          <div class="flex-comm">
-            <p>Select a means of communication for your consultation.</p>
-              <label for="communication">Mode of communication</label>
-              <select name="comm" id="comm">
-                <option value=""></option>
-                <option value="">Google Meet</option>
-                <option value="">Zoom</option>
-                <option value="">Phone Call</option>
-              </select><br>
-            <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+        </div>
+        <div class="vertical"></div>
+        <div class="flex-comm">
+          <div class="card">
+            <div class="body">
+              <p>Select a means of communication for your consultation.</p>
+                <label for="communication">Mode of communication</label>
+                <select name="comm" id="comm">
+                  <option value=""></option>
+                  <option value="">Google Meet</option>
+                  <option value="">Zoom</option>
+                  <option value="">Phone Call</option>
+                </select><br>
+              <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+            </div>
           </div>
+        </div>
       </form>
     </section>
     <section class="price">

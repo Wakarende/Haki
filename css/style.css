@@ -7,6 +7,9 @@
     margin-bottom: 40px;
   }
   /* Book Section  */
+  .book {
+    margin-bottom:80px;
+  }
   .logo {
     height: 100px;
   }
@@ -30,9 +33,17 @@
   display: flex;
   justify-content: space-around;
 }
+.info-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #001B94;
+}
 .vertical {
   border-left: 1px solid #080705;
   height: 200px;
   position: absolute;
   left: 50%;
+}
+.flex-info {
+  height: 200px;
 }
