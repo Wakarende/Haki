@@ -43,18 +43,24 @@
 }
 .info-btn {
   margin-bottom: 20px;
-  background: #89CFF0;
-  color: white;
+  background: none;
+  color: #080705;
   width: 100px;
   padding:5px;
   align-self: center;
+  border: 1px solid #89CFF0;
+}
+.info-btn:hover {
+  background: #89CFF0;
+  border: 1px solid #080705;
 }
 .flex-info {
-  height: 350px;
+  height: 400px;
 }
 .flex-info-body {
   display: flex;
   flex-direction: column;
+  background: #ededed;
 }
 .bi-book {
   font-size: 50px;
