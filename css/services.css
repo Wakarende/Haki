@@ -5,6 +5,16 @@
 .container-fluid {
   background-color: #f9f8f8;
 }
+.jumbotron {
+  background: url("/img/header.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.background-img-text {
+  text-align: center;
+  color: white;
+}
 .card {
   margin: 20px;
   text-align: center;
@@ -14,5 +24,11 @@
   z-index: 100;
 }
 .card:hover .card-title {
+  color: #001b94;
+}
+.card .card-img-top:hover {
+  opacity: 0.8;
+}
+.btn {
   color: #001b94;
 }
