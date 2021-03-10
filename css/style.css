@@ -42,39 +42,54 @@
 }
 .info-btn {
   margin-bottom: 20px;
-  background: none;
-  color: #080705;
+  background: white;
   width: 100px;
   padding:5px;
   align-self: center;
-  border: 1px solid #89CFF0;
+  border: 2px solid #89CFF0;
+  margin-top: 20px;
 }
 .info-btn:hover {
   background: #89CFF0;
   border: 1px solid #080705;
+  color: black;
 }
 .flex-info {
-  height: 400px;
+  height: 200px;
 }
 .flex-info-body {
   display: flex;
   flex-direction: column;
   background: #ededed;
 }
+ /* How it works  */
 .bi-book {
   font-size: 50px;
   line-height: 2;
   color: #89CFF0;
 }
+
 .how-it-works {
   margin-bottom: 80px;
   background: #ededed;
   padding:40px;
   color: #080705;
 }
-.communication {
-  margin-top: 20px;
+/* Print Message  */
+.message {
+  background: #ededed;
+  height: 200px;
 }
+.message-text {
+  font-weight: bold;
+}
+.info-col1 input{
+  margin-bottom: 20px;
+}
+.info-col2 input {
+  margin-bottom: 20px;
+}
+
 /* card rows book section  */
 .form-info
 /* footer  */
@@ -98,10 +113,15 @@
 .bi-footer span {
   color: #080705;
 }
-&copy {
+/* &copy {
   align-items: right;
-}
+} */
 .footer-end {
   display: flex;
   justify-content: space-evenly;
 }
+/* payment  */
+.payment {
+  display: none;
+}
+/* END OF APPOINTMENT CSS  */

@@ -13,30 +13,8 @@
 </head>
 <body>
 <!-- Navigation  -->
-  <!-- <nav class="navbar navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../img/haki-logo.png" alt="logo" width="80" height="80">
-      </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active"  aria-current="page" href="#">Book</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
+  <nav class="navbar navbar-light bg-light">
+  </nav>
 <!-- Header  -->
   <div class="container-flex">
     <div class=" container-fluid text-center  header-book">
@@ -67,8 +45,8 @@
       </div>
     </section>
   </div>
-<!-- client information  -->
-  <div class="container">
+<!-- FORM:client information  -->
+  <div class="container-fluid">
     <section class="book text-center">
       <h2>Book</h2>
       <div class="row">
@@ -76,55 +54,63 @@
           <form class="info" id="form-info">
             <div class="card flex-info">
               <div class="card-body flex-info-body">
-                <label for="names" class="names" id="names">Full Name:</label>
-                  <input type="text" value="" class="name" id="fullname"><br>
-                  <label for="service" class="services" id = "services">Serivce:</label>
-                  <select name="service" id="service">
-                    <option value=""></option>
-                    <option value="Divorce">Divorce</option>
-                    <option value="Personal Injury">Personal Injury</option>
-                    <option value="Labor Law">Labor Law</option>
-                    <option value="Commercial Law">Commercial Law</option>
-                    <option value="Criminal Law">Criminal Law</option>  
-                  </select>
-                <label for="day">Date of Appointment</label>
-                 <input  id = "get-date" type="date" name="birthday" placeholder="Enter Date" required>
-                <label for="time">Time of Appointment:</label>
-                <select name="time" id="time">
-                  <option value="time"></option>
-                  <option value="8:00 a.m">8:00 a.m</option>
-                  <option value="9:00 a.m ">9:00 a.m </option>
-                  <option value="10:00 a.m">10:00 a.m </option>
-                  <option value="11:00 a.m">11:00 a.m </option>
-                  <option value="12:00 a.m">12:00 a.m </option>
-                  <option value="1:00 p.m">1:00 p.m </option>
-                  <option value="2:00 p.m ">2:00 p.m </option>
-                  <option value="3:00 p.m ">3:00 p.m </option>
-                  <option value="4:00 p.m">4:00 p.m </option>
-                  <option value="5:00 p.m">5:00 p.m</option>
-                  <option value="6:00 p.m ">6:00 p.m</option>
-                </select>
-                  <label for="communication"class="communication">Mode of communication:</label>
-                  <select name="comm" id="comm">
+                <div class="row">
+                  <div class="col-md-4 info-col1">
+                    <label for="names" class="names" id="names">Full Name</label>
+                    <input type="text" value="" class="name" id="fullname"><br>
+                    <label for="service" class="services" id = "services">Serivce</label>
+                    <select name="service" id="service">
                       <option value=""></option>
-                      <option value="Google Meet">Google Meet</option>
-                      <option value="Zoom">Zoom</option>
-                      <option value="Phone Call">Phone Call</option>
-                  </select><br>
-                  <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+                      <option value="Divorce">Divorce</option>
+                      <option value="Personal Injury">Personal Injury</option>
+                      <option value="Labor Law">Labor Law</option>
+                      <option value="Commercial Law">Commercial Law</option>
+                      <option value="Criminal Law">Criminal Law</option>  
+                    </select>
+                  </div>
+                  <div class="col-md-4 info-col2">
+                    <label for="day">Date of Appointment</label>
+                    <input  id = "get-date" type="date" name="birthday" placeholder="Enter Date" required>
+                    <label for="time">Time</label><br>
+                    <select name="time" id="time">
+                      <option value="time"></option>
+                      <option value="8:00 a.m">8:00 a.m</option>
+                      <option value="9:00 a.m ">9:00 a.m </option>
+                      <option value="10:00 a.m">10:00 a.m </option>
+                      <option value="11:00 a.m">11:00 a.m </option>
+                      <option value="12:00 a.m">12:00 a.m </option>
+                      <option value="1:00 p.m">1:00 p.m </option>
+                      <option value="2:00 p.m ">2:00 p.m </option>
+                      <option value="3:00 p.m ">3:00 p.m </option>
+                      <option value="4:00 p.m">4:00 p.m </option>
+                      <option value="5:00 p.m">5:00 p.m</option>
+                      <option value="6:00 p.m ">6:00 p.m</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 info-col3">
+                    <label for="communication"class="communication">Communication</label>
+                    <select name="comm" id="comm">
+                        <option value=""></option>
+                        <option value="Google Meet">Google Meet</option>
+                        <option value="Zoom">Zoom</option>
+                        <option value="Phone Call">Phone Call</option>
+                    </select>
+                  </div>
+                </div>
+                <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
               </div>
             </div> 
           </form>
         </div>
-  <!-- Appointment date display  -->
+<!-- Appointment date display  -->
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body message">
               <div class="app-message">
                 <div id="show-app">
-                  <p>Appointment: <span id="displayAppointment"></span></p>
-                  <p>Mode of Communication: <span id="modeOfComm"></span></p>
-                  <p>Service type: <span id="serviceType"></span></p>
+                  <p class="message-text">Appointment: <span id="displayAppointment"></span></p>
+                  <p class="message-text">Mode of Communication: <span id="modeOfComm"></span></p>
+                  <p class="message-text">Service type: <span id="serviceType"></span></p>
                 </div>
               </div>
             </div>
@@ -134,14 +120,34 @@
     </section>
 <!-- Price  -->
     <section class="price text-center">
-      <h2>Payment</h2>
-      <form action="" name="pricing" class="pricing" id="pricing">
-
-      </form>
+      <div class="container">
+        <h2>Payment</h2>
+        <div class="card">
+          <h3>Pay for your Consultation</h3>
+          <div class="card-body">
+            <i class="bi-payment bi-cash"></i><br>
+            <button name="pay" class="pay" id="pay" onclick="click">Pay</button>
+              <form action="" name="payment" class="payment" id="payment">
+                <label for="name" class="paymentname" id="paymentName">Full Name</label><br>
+                <input type="text" class="pname" id="pname"><br>
+                <label for="email" class="email" id="email">Email</label><br>
+                <input type="email" class="emailaddress" id="emailaddress"><br>
+                <label for="mode">Mode of Payment</label><br>
+                <select name="modeofpayment" id="modeOfPayment">
+                  <option value=""></option>
+                  <option value="Cash">Cash</option>
+                  <option value="Cash">Card</option>
+                  <option value="Cash">M-Pesa</option>
+                </select><br>
+                <button class="paymentconfirm" id="paymentconfirm" onclick="click">Confirm Payment</button>
+              </form>
+          </div>
+        </div> 
+      </div>
     </section>
   </div>
 <!-- Footer  -->
-  <!-- <footer class="footer sticky-bottom">
+  <footer class="footer sticky-bottom"> 
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -175,7 +181,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
 </body>

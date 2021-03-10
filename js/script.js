@@ -19,4 +19,41 @@
     });
     });
   });
+
+  // Payment click functions
+
+  $(document).ready(function() {
+    $("#pay").click(function() {
+      $("#payment").slideDown();
+    })
   
+  //  $("#paymentconfirm").click(function(event) {
+  //     event.preventDefault();
+  //     $("#payment").slideUp();
+    });
+  
+
+  // Payment output
+
+  // $(document).ready(function() {
+  //   $("#payment").submit(function(event) {
+  //     event.preventDefault();
+  //   $("#paymentconfirm").click(function() {
+  //     var paymentName = $("#pname").val();
+  //     var paymentEmail = $("#email").val();
+  //     var paymentMode = $("#modeOfPayment option:selected").val();
+
+  //   if (paymentName == " ") {
+  //     alert("Kindly input your payment information.");
+  //   }else if(paymentEmail == "" || paymentMode == "") {
+  //     alert("Kindly input your payment information.");
+  //   }else{
+  //     alert ("Dear " + paymentName + "." + "Thank you for your "  + "transaction." + "We will send your receipt and more information on your session to your email address" )
+  //   }
+  //   });
+    
+  //   });
+    
+    
+  // })
+
