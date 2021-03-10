@@ -2,14 +2,17 @@
   margin: 60px;
   padding: 20px;
 }
-.container-fluid {
-  background-color: #f9f8f8;
+.container-flex {
+  background-color: #ededed;
 }
 .jumbotron {
-  background: url("/img/header.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/services-img.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 50vh;
+  width: 100%;
 }
 .background-img-text {
   text-align: center;
@@ -20,15 +23,16 @@
   text-align: center;
 }
 .card:hover {
-  box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+  box-shadow: 0 40px 60px -20px #969090;
   z-index: 100;
-}
-.card:hover .card-title {
-  color: #001b94;
-}
-.card .card-img-top:hover {
   opacity: 0.8;
 }
+.card:hover .card-title {
+  color: #89cff0;
+}
+.col-md-4 {
+  padding-bottom: 60px;
+}
 .btn {
-  color: #001b94;
+  color: #89cff0;
 }
