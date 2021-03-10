@@ -71,70 +71,66 @@
   <div class="container">
     <section class="book text-center">
       <h2>Book</h2>
-      <form class="info" id="form-info">
-        <div class="card flex-info">
-          <div class="card-body flex-info-body">
-            <label for="names" class="names" id="names">Full Name:</label>
-              <input type="text" value="" class="name" id="fullname"><br>
-              <label for="service" class="services" id = "services">Serivce:</label>
-              <select name="service" id="service">
-                <option value=""></option>
-                <option value="">Divorce</option>
-                <option value="">Personal Injury</option>
-              </select>
-            <label for="day">Date of Appointment</label>
-              <input class="input" id="day" type="number" placeholder="DD" min="0" max="31" required>
-              <label for="Month">Month</label>
-              <input class="input" id="month" type="number" placeholder="MM" min="0" max="12" required>
-              <label for="year">Year</label>
-              <input class="input" id="year" type="number" placeholder="YY" min="0" max="2021" required><br>
-            <!-- <label for="day" class="day" id="days">Day of Appointment:</label>
-              <select>
-                <option value="day"></option>
-                <option value="day">Monday</option>
-                <option value="day">Tuesday</option>
-                <option value="day">Wednesday</option>
-                <option value="day">Thursday</option>
-                <option value="day">Friday</option>
-                <option value="day">Saturday</option>
-              </select><br> -->
-            <label for="time">Time of Appointment:</label>
-            <select name="time" id="time">
-              <option value="time"></option>
-              <option value="time">8:00 a.m</option>
-              <option value="time">9:00 a.m </option>
-              <option value="time">10:00 a.m </option>
-              <option value="time">11:00 a.m </option>
-              <option value="time">12:00 a.m </option>
-              <option value="time">1:00 p.m </option>
-              <option value="time">2:00 p.m </option>
-              <option value="time">3:00 p.m </option>
-              <option value="time">4:00 p.m </option>
-              <option value="time">5:00 p.m </option>
-              <option value="time">6:00 p.m </option>
-            </select>
-              <label for="communication"class="communication">Mode of communication:</label>
-              <select name="comm" id="comm">
-                  <option value=""></option>
-                  <option value="">Google Meet</option>
-                  <option value="">Zoom</option>
-                  <option value="">Phone Call</option>
-              </select><br>
-              <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="info" id="form-info">
+            <div class="card flex-info">
+              <div class="card-body flex-info-body">
+                <label for="names" class="names" id="names">Full Name:</label>
+                  <input type="text" value="" class="name" id="fullname"><br>
+                  <label for="service" class="services" id = "services">Serivce:</label>
+                  <select name="service" id="service">
+                    <option value=""></option>
+                    <option value="">Divorce</option>
+                    <option value="">Personal Injury</option>
+                  </select>
+                <label for="day">Date of Appointment</label>
+                  <input class="input" id="day" type="number" placeholder="DD" min="0" max="31" required>
+                  <label for="Month">Month</label>
+                  <input class="input" id="month" type="number" placeholder="MM" min="0" max="12" required>
+                  <label for="year">Year</label>
+                  <input class="input" id="year" type="number" placeholder="YY" min="0" max="2021" required><br>
+                <label for="time">Time of Appointment:</label>
+                <select name="time" id="time">
+                  <option value="time"></option>
+                  <option value="time">8:00 a.m</option>
+                  <option value="time">9:00 a.m </option>
+                  <option value="time">10:00 a.m </option>
+                  <option value="time">11:00 a.m </option>
+                  <option value="time">12:00 a.m </option>
+                  <option value="time">1:00 p.m </option>
+                  <option value="time">2:00 p.m </option>
+                  <option value="time">3:00 p.m </option>
+                  <option value="time">4:00 p.m </option>
+                  <option value="time">5:00 p.m </option>
+                  <option value="time">6:00 p.m </option>
+                </select>
+                  <label for="communication"class="communication">Mode of communication:</label>
+                  <select name="comm" id="comm">
+                      <option value=""></option>
+                      <option value="">Google Meet</option>
+                      <option value="">Zoom</option>
+                      <option value="">Phone Call</option>
+                  </select><br>
+                  <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+  <!-- Appointment date display  -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="app-message">
+                <div id="show-app">
+                  <p>Appointment: <span id="displayAppointment"></span></p>
+                  <p>Mode of Communication: <span id="modeOfComm"></span></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div> 
-      </form>
-      <div class="card">
-        <div class="card-body">
-          <div class="app-message">
-        <div id="show-app">
-          <p>Appointment: <span id="displayAppointment"></span></p>
-          <p>Mode of Communication: <span id="modeOfComm"></span></p>
-        </div>
       </div>
-        </div>
-      </div>
-      
     </section>
 <!-- Price  -->
     <section class="price text-center">
