@@ -79,8 +79,16 @@
               <label for="service" class="services" id = "services">Serivce:</label>
               <select name="service" id="service">
                 <option value=""></option>
+                <option value="">Divorce</option>
+                <option value="">Personal Injury</option>
               </select>
-            <label for="names" class="names" id="names">Day of Appointment:</label>
+            <label for="day">Date of Appointment</label>
+              <input class="input" id="day" type="number" placeholder="DD" min="0" max="31" required>
+              <label for="Month">Month</label>
+              <input class="input" id="month" type="number" placeholder="MM" min="0" max="12" required>
+              <label for="year">Year</label>
+              <input class="input" id="year" type="number" placeholder="YY" min="0" max="2021" required><br>
+            <!-- <label for="day" class="day" id="days">Day of Appointment:</label>
               <select>
                 <option value="day"></option>
                 <option value="day">Monday</option>
@@ -89,7 +97,7 @@
                 <option value="day">Thursday</option>
                 <option value="day">Friday</option>
                 <option value="day">Saturday</option>
-              </select><br>
+              </select><br> -->
             <label for="time">Time of Appointment:</label>
             <select name="time" id="time">
               <option value="time"></option>
@@ -116,6 +124,17 @@
           </div>
         </div> 
       </form>
+      <div class="card">
+        <div class="card-body">
+          <div class="app-message">
+        <div id="show-app">
+          <p>Appointment: <span id="displayAppointment"></span></p>
+          <p>Mode of Communication: <span id="modeOfComm"></span></p>
+        </div>
+      </div>
+        </div>
+      </div>
+      
     </section>
 <!-- Price  -->
     <section class="price text-center">
