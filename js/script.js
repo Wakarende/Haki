@@ -5,19 +5,15 @@
     
     $("#info-btn").click(function() {
       var fullName = $("#fullname").val();
-      var dayOfApp = $("#day").val();
-      var monthOfApp = $("#month").val();
-      var yearOfApp = $("#year").val();
-      // var serviceType = $("#service option:selected").val();
+      var timeOfApp = $("#time option:selected").val();
+      var serviceType = $("#service option:selected").val();
 
-      let date = new Date(yearOfApp + "/" + monthOfApp + "/" + dayOfApp);
-      
-
-      if (fullName == ""|| date == "" ||) {
+      var date = new Date($("#get-date").val()).toDateString();;
+      if (fullName == ""|| date == "" || timeOfApp == "" || serviceType == "") {
         alert("please fill in your information below")
       }else {
-        $("#displayAppointment").text("Dear " + fullName + "," + "your appointment is on " + date + ".")
-        // $("#modeOfComm").text("Your consultation will be held via " + serviceType);
+        $("#displayAppointment").text("Dear " + fullName + "," + "your appointment is on " + date + "," + " at " + timeOfApp)
+        $("#modeOfComm").text("Your consultation will be held via " + serviceType);
       }
     });
     });

@@ -81,36 +81,35 @@
                   <label for="service" class="services" id = "services">Serivce:</label>
                   <select name="service" id="service">
                     <option value=""></option>
-                    <option value="">Divorce</option>
-                    <option value="">Personal Injury</option>
+                    <option value="Divorce">Divorce</option>
+                    <option value="Personal Injury">Personal Injury</option>
+                    <option value="Labor Law">Labor Law</option>
+                    <option value="Commercial Law">Commercial Law</option>
+                    <option value="Criminal Law">Criminal Law</option>  
                   </select>
                 <label for="day">Date of Appointment</label>
-                  <input class="input" id="day" type="number" placeholder="DD" min="0" max="31" required>
-                  <label for="Month">Month</label>
-                  <input class="input" id="month" type="number" placeholder="MM" min="0" max="12" required>
-                  <label for="year">Year</label>
-                  <input class="input" id="year" type="number" placeholder="YY" min="0" max="2021" required><br>
+                 <input  id = "get-date" type="date" name="birthday" placeholder="Enter Date" required>
                 <label for="time">Time of Appointment:</label>
                 <select name="time" id="time">
                   <option value="time"></option>
-                  <option value="time">8:00 a.m</option>
-                  <option value="time">9:00 a.m </option>
-                  <option value="time">10:00 a.m </option>
-                  <option value="time">11:00 a.m </option>
-                  <option value="time">12:00 a.m </option>
-                  <option value="time">1:00 p.m </option>
-                  <option value="time">2:00 p.m </option>
-                  <option value="time">3:00 p.m </option>
-                  <option value="time">4:00 p.m </option>
-                  <option value="time">5:00 p.m </option>
-                  <option value="time">6:00 p.m </option>
+                  <option value="8:00 a.m">8:00 a.m</option>
+                  <option value="9:00 a.m ">9:00 a.m </option>
+                  <option value="10:00 a.m">10:00 a.m </option>
+                  <option value="11:00 a.m">11:00 a.m </option>
+                  <option value="12:00 a.m">12:00 a.m </option>
+                  <option value="1:00 p.m">1:00 p.m </option>
+                  <option value="2:00 p.m ">2:00 p.m </option>
+                  <option value="3:00 p.m ">3:00 p.m </option>
+                  <option value="4:00 p.m">4:00 p.m </option>
+                  <option value="5:00 p.m">5:00 p.m</option>
+                  <option value="6:00 p.m ">6:00 p.m</option>
                 </select>
                   <label for="communication"class="communication">Mode of communication:</label>
                   <select name="comm" id="comm">
                       <option value=""></option>
-                      <option value="">Google Meet</option>
-                      <option value="">Zoom</option>
-                      <option value="">Phone Call</option>
+                      <option value="Google Meet">Google Meet</option>
+                      <option value="Zoom">Zoom</option>
+                      <option value="Phone Call">Phone Call</option>
                   </select><br>
                   <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
               </div>
@@ -141,7 +140,7 @@
     </section>
   </div>
 <!-- Footer  -->
-  <footer class="footer sticky-bottom">
+  <!-- <footer class="footer sticky-bottom">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -175,7 +174,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
 </body>
