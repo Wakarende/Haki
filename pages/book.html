@@ -16,7 +16,7 @@
   <nav class="navbar navbar-light bg-light">
   </nav>
 <!-- Header  -->
-  <div class="container-flex">
+  <div id="appointment" class="container-flex">
     <div class=" container-fluid text-center  header-book">
       <h1>Book Your Appointment Today</h1>
       <p class="lead">Home // Book </p>
@@ -48,7 +48,7 @@
 <!-- FORM:client information  -->
   <div class="container-fluid">
     <section class="book text-center">
-      <h2>Book</h2>
+      <h2 class="book-title">Book</h2>
       <div class="row">
         <div class="col-md-6">
           <form class="info" id="form-info">
@@ -121,7 +121,7 @@
 <!-- Price  -->
     <section class="price text-center">
       <div class="container">
-        <h2>Payment</h2>
+        <h2 class="payment-title">Payment</h2>
         <div class="card">
           <h3>Pay for your Consultation</h3>
           <div class="card-body">
@@ -131,7 +131,7 @@
                 <label for="name" class="paymentname" id="paymentName">Full Name</label><br>
                 <input type="text" class="pname" id="pname"><br>
                 <label for="email" class="email" id="email">Email</label><br>
-                <input type="email" class="emailaddress" id="emailaddress"><br>
+                <input type="text" class="emailaddress" id="emailaddress"><br>
                 <label for="mode">Mode of Payment</label><br>
                 <select name="modeofpayment" id="modeOfPayment">
                   <option value=""></option>
@@ -145,39 +145,34 @@
         </div> 
       </div>
     </section>
-  </div>
 <!-- Footer  -->
-  <footer class="footer sticky-bottom"> 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Useful Links</h5>
-          <ul class="footer-nav">
-            <li class="footer-link"><a>Home</a></li>
-            <li class="footer-link"><a>About</a></li>
-            <li class="footer-link"><a>Services</a></li>
-            <li class="footer-link"><a>Appointment</a></li>
-            <li class="footer-link"><a>Contact</a></li>
-          </ul>
+  <footer> 
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <i class="bi-footer bi-facebook bi-social"></i>
+              <i class="bi-footer bi-linkedin bi-social"></i>
+              <i class="bi-footer bi-twitter bi-social"></i>
+          </div>
+          <div class="col-md-6">
+            <h5>Get in Touch</h5>
+            <i class="bi-footer bi-telephone-fill"></i>
+            <span>+254712345678<span>
+            <br>
+            <i class="bi-footer bi-envelope-fill"></i>
+            <span>haki@info.co.ke</span>
+            <br>
+            <i class="bi-footer bi-geo-alt"></i>
+            <span>Ngong Lane, Nairobi</span>
+          </div>
         </div>
-        <div class="col-md-6">
-        <h5>Get in Touch</h5>
-        <i class="bi-footer bi-telephone-fill"></i>
-        <span>+254712345678<span>
-        <br>
-        <i class="bi-footer bi-envelope-fill"></i>
-        <span>haki@info.co.ke</span>
-        <br>
-        </div>
-      </div>
-      <div class="footer-end">
-        <div class="flex-social">
-          <i class="bi-footer bi-facebook bi-social"></i>
-          <i class="bi-footer bi-linkedin bi-social"></i>
-          <i class="bi-footer bi-twitter bi-social"></i>
-        </div>
-        <div class="copy">
-          &copy; Haki 2021. All Rights Reserved.
+        <div class="footer-end">
+          
+          </div>
+          <div class="copy">
+            &copy; Haki 2021. All Rights Reserved.
+          </div>
         </div>
       </div>
     </div>

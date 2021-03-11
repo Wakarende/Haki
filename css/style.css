@@ -50,7 +50,7 @@
   margin-top: 20px;
 }
 .info-btn:hover {
-  background: #89CFF0;
+  background: rgb(0, 183, 255);
   border: 1px solid #080705;
   color: black;
 }
@@ -60,24 +60,29 @@
 .flex-info-body {
   display: flex;
   flex-direction: column;
-  background: #ededed;
+  background: #d0d0d0;
 }
  /* How it works  */
 .bi-book {
   font-size: 50px;
   line-height: 2;
-  color: #89CFF0;
+  color: rgb(0, 183, 255);
 }
-
+.book-title {
+  color: rgb(0, 183, 255);
+}
+.payment-title{
+  color: rgb(0, 183, 255);
+}
 .how-it-works {
   margin-bottom: 80px;
-  background: #ededed;
+  background: #d0d0d0;
   padding:40px;
   color: #080705;
 }
 /* Print Message  */
 .message {
-  background: #ededed;
+  background: #d0d0d0;
   height: 200px;
 }
 .message-text {
@@ -90,11 +95,10 @@
   margin-bottom: 20px;
 }
 
-/* card rows book section  */
-.form-info
 /* footer  */
-.footer {
-  background: #ededed;
+.footer{
+  margin-top: 80px;
+  background: #d0d0d0;
   padding-top: 50px;
 }
 .footer-link {
@@ -106,8 +110,8 @@
   text-align: center;
 }
 .bi-footer {
-  font-size: 20px;
-  color: #89CFF0;
+  font-size: 25px;
+  color: rgb(0, 183, 255);
   margin-right:20px;
 }
 .bi-footer span {
@@ -123,5 +127,9 @@
 /* payment  */
 .payment {
   display: none;
+}
+.bi-payment {
+  font-size: 50px;
+  color: rgb(0, 183, 255)
 }
 /* END OF APPOINTMENT CSS  */
