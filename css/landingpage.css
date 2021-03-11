@@ -1,0 +1,303 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.navigation-bar{
+    display: none;
+}
+
+/* HEADER starts here */
+
+header{
+    top: 0;
+    background: #ffff;
+    position:sticky;
+    left: 0;
+    right: 0;
+    border-bottom:1xp solid #423940;
+    padding:0 15px;
+    z-index: 10 ;
+}
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .haki-logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 183, 255)
+}
+header .nav-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .nav-bar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .nav-bar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 75px;
+    color: rgb(0, 183, 255);
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .fixed .nav-bar ul li a{
+    color: #ffff;
+}
+header .nav-bar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: rgb(0, 183, 255);
+    width: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    transition: all .5s ease;
+}
+header .nav-bar ul li a:hover::before
+{
+    width: 100%;
+    left: 0;
+}
+header .nav-bar ul li a.active::before
+{
+    width: 100%;
+    left: 0;
+}
+/* header ends here */
+
+/* landing page start */
+
+
+.homeintro{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #ffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.homeintro{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/home.jpg);
+}
+.homeintro h1{
+    text-align: center;
+    position: relative;
+    padding-top: 20%;
+}
+
+/* landing page end */
+
+/* about starts here */
+
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about .title::before{
+    content:"";
+    position:absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+
+}
+.about .title::after{
+    content:"who we are";
+    position:absolute;
+    bottom: 41px;
+    left: 46.5%;
+    font-size: 20px;
+    color: rgb(0, 183, 255);
+    padding: 1px
+    transform-translateX(-50%);
+    background-color:white
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;  
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.about .about-content .right .text span{
+    color: rgb(0, 183, 255);
+}
+.about .about-content .right p{
+    text-align: justify;    
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(0, 183, 255);
+    color: cornsilk;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #89CFF0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.about .about-content .right a:hover{
+    color: rgb(0, 183, 255);
+    background: none;
+}
+
+/* about ends here */
+
+/* team section starts here */
+
+.lawyer h2{
+    color: rgb(0, 183, 255);
+}
+.lawyer .col-sm-3{
+    padding: 0;
+}
+.lawyer .card > a{
+    display: block;
+}
+.lawyer .card img{
+    width: 100%;
+    height: 400px;
+}
+.lawyer .card h4{
+    color: white;
+    text-transform: uppercase;
+}
+.lawyer .card p{
+    font-size: 15px;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0 35px;
+}
+.lawyer .card .social-nav{
+    margin-bottom: 45px;
+}
+.lawyer .card .social-nav a{
+    color: white;
+    font-size: 16px;
+    margin: 0 4px;
+}
+.lawyer .card .social-nav a:hover{
+    opacity: .75;
+}
+.lawyer .card:hover .lawyer-over{
+    opacity: 1;
+    visibility: visible;
+}
+.lawyer .card:hover .card-title-wrap{
+    background-color: rgb(0, 183, 255);
+}
+.lawyer .card:hover .card-title-wrap .card-title,
+.lawyer .card:hover .card-title-wrap .card-text{
+    color: white;
+    font-weight: 500;
+}
+.lawyer .lawyer-over{
+    padding-top: 45px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.lawyer .card-title-wrap{
+    padding: 15px 25px;
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+}
+.lawyer .card-title-wrap .card-title,
+.lawyer .card-title-wrap .card-text{
+    display: block;
+    margin: 0;
+}
+.lawyer .card-title-wrap .card-title{
+    font-size: 24px;
+    color: black;
+}
+.lawyer .card-title-wrap .card-text{
+    font-size: 18px;
+    color: black;
+}
+.card-block{
+    margin: 5px;
+}
+
+/* team section ends here */
