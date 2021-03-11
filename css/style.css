@@ -91,7 +91,7 @@
 .footer{
   margin-top: 80px;
   background: #d0d0d0;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .footer-link {
   list-style: none;
@@ -109,16 +109,12 @@
 .bi-footer span {
   color: #080705;
 }
-.bi-social {
-  display: flex;
-  margin-bottom: 20px;
-}
 .copy{
-  align-items: center;
-}
-.footer-end {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.footer-contact {
+  margin-bottom: 40px;
 }
 
 /* payment  */
