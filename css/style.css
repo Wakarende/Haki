@@ -3,13 +3,9 @@
 }
 /* BEGINNING OF SERVICE PAGE CSS */
 .container {
-  margin: 60px;
   padding: 20px;
 }
-.container-flex {
-  background-color: #ededed;
-}
-.jumbotron {
+.background-img {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/img/services-img.jpg");
   background-size: cover;
@@ -19,8 +15,19 @@
   width: 100%;
 }
 .background-img-text {
+  padding-top: 110px;
   text-align: center;
   color: white;
+}
+.btn {
+  border: 2px solid rgb(0, 183, 255);
+  color: white;
+}
+.services-link {
+  color: rgb(0, 183, 255);
+}
+.services-link:hover {
+  color: rgb(0, 183, 255);
 }
 /* SERVICE CARDS STYLES */
 .card {
