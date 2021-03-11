@@ -155,6 +155,12 @@
 .footer-contact {
   margin-bottom: 40px;
 }
+.btn-footer-message{
+  margin-top: 20px;
+}
+.form-message {
+  width:300px;
+}
 
 /* payment  */
 .payment-title{
