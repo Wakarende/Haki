@@ -1,3 +1,50 @@
- * {
-   font-family: 'Ubuntu', sans-serif;
-  }
+
+/* BEGINNING OF SERVICE PAGE CSS */
+.container {
+  padding: 20px;
+}
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/services-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+}
+.background-img-text {
+  padding-top: 110px;
+  text-align: center;
+  color: white;
+}
+.btn {
+  border: 2px solid rgb(0, 183, 255);
+  color: white;
+}
+.services-link {
+  color: rgb(0, 183, 255);
+}
+.services-link:hover {
+  color: rgb(0, 183, 255);
+}
+/* SERVICE CARDS STYLES */
+.card {
+  margin: 20px;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0 40px 60px -20px #969090;
+  z-index: 100;
+  opacity: 0.9;
+}
+.card:hover .card-title {
+  color: rgb(0, 183, 255);
+}
+.col-md-4 {
+  padding-bottom: 60px;
+}
+.btn {
+  color: rgb(0, 183, 255);
+}
+/* END OF SERVICE PAGE CSS */
+
