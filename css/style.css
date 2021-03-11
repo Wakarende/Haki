@@ -59,17 +59,6 @@
   .book {
     margin-bottom:80px;
   }
-
-  .nav-link {
-    color: #080705;
-    text-transform: uppercase;
-  }
-  .nav-link:hover{
-    color: #001B94;
-  }
-  .navbar {
-    margin-bottom: 0;
-  }
   .header-book {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/book-img-header.jpg);
     background-repeat: no-repeat;
