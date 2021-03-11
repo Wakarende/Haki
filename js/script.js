@@ -17,9 +17,6 @@
       }
     });
     });
-
-
-
   });
 
   // Payment click functions
