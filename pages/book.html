@@ -49,17 +49,14 @@
   <div class="container-fluid">
     <section class="book text-center">
       <h2 class="book-title">Book</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form class="info" id="form-info">
-            <div class="card flex-info">
+      <div class="container">
+          <form class="info form-group" id="form-info">
+            <div class="card ">
               <div class="card-body flex-info-body">
-                <div class="row">
-                  <div class="col-md-4 info-col1">
                     <label for="names" class="names" id="names">Full Name</label>
-                    <input type="text" value="" class="name" id="fullname"><br>
+                    <input type="text" value="" class="name form-control" id="fullname"><br>
                     <label for="service" class="services" id = "services">Serivce</label>
-                    <select name="service" id="service">
+                    <select name="service" id="service" class="form-control">
                       <option value=""></option>
                       <option value="Divorce">Divorce</option>
                       <option value="Personal Injury">Personal Injury</option>
@@ -67,12 +64,10 @@
                       <option value="Commercial Law">Commercial Law</option>
                       <option value="Criminal Law">Criminal Law</option>  
                     </select>
-                  </div>
-                  <div class="col-md-4 info-col2">
-                    <label for="day">Date of Appointment</label>
-                    <input  id = "get-date" type="date" name="birthday" placeholder="Enter Date" required>
+                    <label for="day">Appointment</label>
+                    <input  id = "get-date" type="date" name="birthday"  class= "form-control" placeholder="Enter Date" required>
                     <label for="time">Time</label><br>
-                    <select name="time" id="time">
+                    <select name="time" id="time" class= "form-control">
                       <option value="time"></option>
                       <option value="8:00 a.m">8:00 a.m</option>
                       <option value="9:00 a.m ">9:00 a.m </option>
@@ -86,25 +81,22 @@
                       <option value="5:00 p.m">5:00 p.m</option>
                       <option value="6:00 p.m ">6:00 p.m</option>
                     </select>
-                  </div>
-                  <div class="col-md-4 info-col3">
                     <label for="communication"class="communication">Communication</label>
-                    <select name="comm" id="comm">
+                    <select name="comm" id="comm" class= "form-control" >
                         <option value=""></option>
                         <option value="Google Meet">Google Meet</option>
                         <option value="Zoom">Zoom</option>
                         <option value="Phone Call">Phone Call</option>
                     </select>
-                  </div>
+                  <button name="info-btn" class="info-btn" id="info-btn" onclick="click" value="submit">Continue</button>
                 </div>
-                <button name="info-btn" class="info-btn" id="info-btn" onclick="click">Continue</button>
               </div>
             </div> 
           </form>
-        </div>
+       </div>
 <!-- Appointment date display  -->
-        <div class="col-md-6">
-          <div class="card">
+        <div class="container">
+          <div class="card ">
             <div class="card-body message">
               <div class="app-message">
                 <div id="show-app">
@@ -115,25 +107,24 @@
               </div>
             </div>
           </div>
-        </div> 
-      </div>
+        </div>
     </section>
 <!-- Price  -->
     <section class="price text-center">
       <div class="container">
         <h2 class="payment-title">Payment</h2>
-        <div class="card">
+        <div class="card-pay">
           <h3>Pay for your Consultation</h3>
-          <div class="card-body">
+          <div class="card-body-pay">
             <i class="bi-payment bi-cash"></i><br>
             <button name="pay" class="pay" id="pay" onclick="click">Pay</button>
-              <form action="" name="payment" class="payment" id="payment">
+              <form action="" name="payment" class="payment form-group" id="payment">
                 <label for="name" class="paymentname" id="paymentName">Full Name</label><br>
-                <input type="text" class="pname" id="pname"><br>
+                <input type="text" class="pname form-control" id="pname"><br>
                 <label for="email" class="email" id="email">Email</label><br>
-                <input type="text" class="emailaddress" id="emailaddress"><br>
+                <input type="text" class="emailaddress form-control" id="emailaddress"><br>
                 <label for="mode">Mode of Payment</label><br>
-                <select name="modeofpayment" id="modeOfPayment">
+                <select name="modeofpayment" id="modeOfPayment" class="modepayment form-control">
                   <option value=""></option>
                   <option value="Cash">Cash</option>
                   <option value="Cash">Card</option>
@@ -147,7 +138,7 @@
     </section>
 <!-- Footer  -->
   <footer> 
-    <div class="footer">
+    <div class="footer sticky-bottom">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -164,7 +155,7 @@
             <span>haki@info.co.ke</span>
             <br>
             <i class="bi-footer bi-geo-alt"></i>
-            <span>Ngong Lane, Nairobi</span>
+            <span>Ngong Lane, Nairobi.</span>
           </div>
         </div>
         <div class="footer-end">

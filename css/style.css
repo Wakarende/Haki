@@ -3,15 +3,13 @@
   }
   h2 {
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   /* Book Section  */
   .book {
     margin-bottom:80px;
   }
-  .logo {
-    height: 100px;
-  }
+
   .nav-link {
     color: #080705;
     text-transform: uppercase;
@@ -36,31 +34,28 @@
   .header-book p {
     color: white;
   }
-.info {
+/* .info {
   display: flex;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; */
+
 .info-btn {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: white;
   width: 100px;
   padding:5px;
   align-self: center;
-  border: 2px solid #89CFF0;
+  border: 2px solid rgb(0, 183, 255);
   margin-top: 20px;
 }
 .info-btn:hover {
-  background: rgb(0, 183, 255);
-  border: 1px solid #080705;
-  color: black;
+  border: 2px solid rgb(0, 183, 255);
+  color:rgb(0, 183, 255);
 }
-.flex-info {
-  height: 200px;
-}
+/* .flex-info {
+  /* height: 200px; */
+/* } */ 
 .flex-info-body {
-  display: flex;
-  flex-direction: column;
-  background: #d0d0d0;
+  border: 1px solid rgb(0, 183, 255);
 }
  /* How it works  */
 .bi-book {
@@ -71,9 +66,6 @@
 .book-title {
   color: rgb(0, 183, 255);
 }
-.payment-title{
-  color: rgb(0, 183, 255);
-}
 .how-it-works {
   margin-bottom: 80px;
   background: #d0d0d0;
@@ -82,11 +74,11 @@
 }
 /* Print Message  */
 .message {
-  background: #d0d0d0;
-  height: 200px;
+  border: 1px solid rgb(0, 183, 255);
 }
 .message-text {
   font-weight: bold;
+  text-align: center;
 }
 .info-col1 input{
   margin-bottom: 20px;
@@ -117,19 +109,63 @@
 .bi-footer span {
   color: #080705;
 }
-/* &copy {
-  align-items: right;
-} */
+.bi-social {
+  display: flex;
+  margin-bottom: 20px;
+}
+.copy{
+  align-items: center;
+}
 .footer-end {
   display: flex;
   justify-content: space-evenly;
 }
+
 /* payment  */
+.payment-title{
+  color: rgb(0, 183, 255);
+  margin-top: 80px;
+}
 .payment {
   display: none;
 }
 .bi-payment {
   font-size: 50px;
   color: rgb(0, 183, 255)
+}
+.card-pay {
+  border: 1px solid rgb(0, 183, 255);
+  padding: 20px;
+}
+.pay {
+  border: 2px solid rgb(0, 183, 255);
+  padding:5px;
+  width: 2cm;
+  background: white;
+}
+.pay:hover {
+  color: rgb(0, 183, 255);
+  border: 2px solid rgb(0, 183, 255);
+}
+.paymentname {
+  margin-top: 20px;
+}
+.pname {
+  margin-bottom: 20px;
+}
+.emailaddress {
+  margin-bottom: 20px;
+}
+.modepayment {
+  margin-bottom: 20px;
+}
+.paymentconfirm {
+  padding: 5px;
+  background: white;
+  border: 2px solid rgb(0, 183, 255);
+}
+.paymentconfirm:hover {
+  color: rgb(0, 183, 255);
+  border: 2px solid rgb(0, 183, 255);
 }
 /* END OF APPOINTMENT CSS  */

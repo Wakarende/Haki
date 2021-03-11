@@ -7,7 +7,6 @@
       var timeOfApp = $("#time option:selected").val();
       var serviceType = $("#service option:selected").val();
       var communication = $("#comm option:selected").val();
-
       var date = new Date($("#get-date").val()).toDateString();
       if (fullName == ""|| date == "" || timeOfApp == "" || serviceType == "" || communication == "") {
         alert("please fill in your information below")
