@@ -76,6 +76,7 @@
                     <select name="service" id="service" class="form-control">
                       <option value=""></option>
                       <option value="Divorce">Divorce</option>
+                       <option value="Family">Family</option>
                       <option value="Personal Injury">Personal Injury</option>
                       <option value="Labor Law">Labor Law</option>
                       <option value="Commercial Law">Commercial Law</option>
@@ -154,27 +155,42 @@
       </div>
     </section>
 <!-- Footer  -->
-  <footer> 
-    <div class="footer sticky-bottom">
-      <div class="container">
-          <div class="footer-contact">
-            <h5>Get in Touch</h5>
-            <i class="bi-footer bi-telephone-fill"></i>
-            <span>+254712345678<span>
-            <br>
-            <i class="bi-footer bi-envelope-fill"></i>
-            <span>haki@info.co.ke</span>
-            <br>
-            <i class="bi-footer bi-geo-alt"></i>
-            <span>Ngong Lane, Nairobi.</span>
-          </div>
-          <div class="copy">
-            &copy; Haki 2021. All Rights Reserved.
-          </div>
+<footer> 
+  <div class="footer sticky-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-2">
+                <div class="footer-contact">
+                    <h5>Get in Touch</h5>
+                    <i class="bi-footer bi-telephone-fill"></i>
+                    <span>+254712345678<span>
+                    <br>
+                    <i class="bi-footer bi-envelope-fill"></i>
+                    <span>haki@info.co.ke</span>
+                    <br>
+                    <i class="bi-footer bi-geo-alt"></i>
+                    <span>Ngong Lane, Nairobi.</span>
+                </div>
+            </div>
+            <div class="col-md-6 form-message">
+                <div class="mb-3 ">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 ">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="button" class="btn btn-footer-message">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+          &copy; Haki 2021. All Rights Reserved.
         </div>
       </div>
     </div>
-  </footer> 
+  </div>
+</footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
 </body>
