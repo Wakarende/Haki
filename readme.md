@@ -2,9 +2,9 @@
 
 ## Author
 
-Joy Kirii
-Wairimu Karuga
-Samuel Mwangi
+- Joy Kirii
+- Wairimu Karuga
+- Samuel Mwangi
 
 ## Description
 
