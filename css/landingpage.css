@@ -213,6 +213,18 @@ section{
     background: none;
 }
 
+@media  screen and (max-width:480px) {
+    .about-img{
+        display: none;
+    }
+    .about .about-content{
+       display:block;
+        width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
 /* about ends here */
 
 /* team section starts here */
@@ -300,4 +312,12 @@ section{
     margin: 5px;
 }
 
+@media  screen and (max-width:480px) {
+    .lawyer .card {
+        width: 300px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 /* team section ends here */
