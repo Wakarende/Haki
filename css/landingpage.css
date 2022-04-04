@@ -122,6 +122,18 @@ header .nav-bar ul li a.active::before
     padding-top: 20%;
 }
 
+@media screen and (max-width:480px)
+{
+    .homeintro{
+        height: 40vh;
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
 /* landing page end */
 
 /* about starts here */
